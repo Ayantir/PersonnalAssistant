@@ -48,7 +48,7 @@ local function CreateBindings()
 
 end
 
-local function onAddonLoaded(event, addonName)
+local function OnAddonLoaded(_, addonName)
 
 	if addonName == ADDON_NAME then
 	
@@ -61,4 +61,4 @@ local function onAddonLoaded(event, addonName)
 	
 end
 
-EVENT_MANAGER:RegisterForEvent(ADDON_NAME, EVENT_ADD_ON_LOADED, onAddonLoaded)
+EVENT_MANAGER:RegisterForEvent(ADDON_NAME, EVENT_ADD_ON_LOADED, OnAddonLoaded)
